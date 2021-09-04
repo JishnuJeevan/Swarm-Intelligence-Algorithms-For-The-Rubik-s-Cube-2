@@ -15,14 +15,14 @@ The repository contains codes for the following swarm intelligence algorithms.
 The code is a modified version of the orginal algorithms and they are written in such a way that they can solve the Rubik's cube.
 
 ## Kociemba's Algorithm
-When Kociemba's algorithm is used to solve the cube, it returns more than one solution for some cube state. The file 0_KociembaStats is used to run the Kociemba's algorithm n times on the cube state to get n different solution length and to find out the mean, mode, standard deviation etc of these solution lengths.  
+When Kociemba's algorithm is used to solve the cube, it returns more than one solution for some cube state. The file 0_KociembaStats.py is used to run the Kociemba's algorithm n times on the cube state to get n different solution length and to find out the mean, mode, standard deviation etc of these solution lengths.  
 
 ## Running the code
 To run the code for the PSO just type `python 1_PSO.py` <br>
 To run the code for greedy tree search type `python 2_GREEDY.py` <br>
 To run the code for ACO just type `python 3_ACO.py` <br>
 To run the code for KHO just type `python 4_KHO.py` <br>
-To run the code for KHO just type `python 0_KociembaStats` <br>
+To run the code for KHO just type `python 0_KociembaStats.py` <br>
 NOTE: When you first run the program, the program will generate databases and look up tables. This might take an hour or so. These databases and look up tables contain different configurations of the cube which is used by the Kociemba algorithm for solving it. <br>
 The Kociemba algorithm here is used for finding the fitness of the cube i.e. the number of moves needed to solve the cube from the current state.
 
@@ -96,7 +96,7 @@ were we read the colors on the top side first, then the right side, then the fro
 2. The code for the fitness function (Kociemba Algorithm) is taken from: [https://github.com/hkociemba/RubiksCube-TwophaseSolver]
 
 # Changes made
-1. The file 0_KociembaStats is used to run the Kociemba's algorithm n times on the cube state to get n different solution length and to find out the mean, mode, standard deviation etc of these solution lengths. This is to determine the appropriate number of times the cube state should be evaluted since Kociemba's algorithm returns more than one solution for a cube state. The distance between the current state of the cube and the solved state is used as the fitness value by the swarm intelligence algorithms.
+1. The file 0_KociembaStats.py is used to run the Kociemba's algorithm n times on the cube state to get n different solution length and to find out the mean, mode, standard deviation etc of these solution lengths. This is to determine the appropriate number of times the cube state should be evaluted since Kociemba's algorithm returns more than one solution for a cube state. The distance between the current state of the cube and the solved state is used as the fitness value by the swarm intelligence algorithms.
 2. Originally the distance between the current state of the cube and the solved state is used as the fitness value. Now we run the Kociemba's algorithm n times on the cube state and the rounded average of these n values is taken as the fitnes value of the cube state. Suitable value for n is 1, 2 or 3. If n is set to 3 the ACO and KHO will take hours to solve the cube. It also depends on the number of iterations and the krills (or the ants) used by the algorithm. Therefore it would be better to set the value of n to 1. 
 3. Each algorithm prints the total number of times the Kociemba's algorithm was called.
 4. When the cube is solved the fitness value returned by Kociemba's algorithm was 1. This mistake has been rectified and now it returns 0.
