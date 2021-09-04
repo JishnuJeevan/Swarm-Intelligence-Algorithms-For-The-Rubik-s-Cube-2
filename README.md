@@ -101,4 +101,5 @@ were we read the colors on the top side first, then the right side, then the fro
 3. Each algorithm prints the total number of times the Kociemba's algorithm was called.
 4. When the cube is solved the fitness value returned by Kociemba's algorithm was 1. This mistake has been rectified and now it returns 0.
 5. Changes have been made to the graphs that plot the change in fitness value with iteration.
+6. When running each of the algorithms - PSO, greedy, ACO, and KHO - the program asks for the number of times the cube state should be evalauted.
 
