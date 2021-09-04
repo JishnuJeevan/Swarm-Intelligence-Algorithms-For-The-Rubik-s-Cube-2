@@ -22,7 +22,7 @@ To run the code for the PSO just type `python 1_PSO.py` <br>
 To run the code for greedy tree search type `python 2_GREEDY.py` <br>
 To run the code for ACO just type `python 3_ACO.py` <br>
 To run the code for KHO just type `python 4_KHO.py` <br>
-To run the code for KHO just type `python 0_KociembaStats.py` <br>
+To run the code for doing analaysis of Kociemba's algorithm just type `python 0_KociembaStats.py` <br>
 NOTE: When you first run the program, the program will generate databases and look up tables. This might take an hour or so. These databases and look up tables contain different configurations of the cube which is used by the Kociemba algorithm for solving it. <br>
 The Kociemba algorithm here is used for finding the fitness of the cube i.e. the number of moves needed to solve the cube from the current state.
 
