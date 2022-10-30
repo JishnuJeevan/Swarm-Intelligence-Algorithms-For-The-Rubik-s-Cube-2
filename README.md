@@ -103,3 +103,7 @@ were we read the colors on the top side first, then the right side, then the fro
 5. Changes have been made to the graphs that plot the change in fitness value with iteration.
 6. When running each of the algorithms - PSO, greedy, ACO, and KHO - the program asks for the number of times the cube state should be evalauted.
 
+# Citations
+The full paper can be read at: DOI: [https://www.tandfonline.com/doi/full/10.1080/08839514.2022.2138129?scroll=top&needAccess=true] <br>
+To cite this article: Jishnu Jeevan & Madhu S. Nair (2022) On the performance analysis of solving the Rubik’s cube using swarm intelligence algorithms, Applied Artificial Intelligence, 36:1, DOI: 10.1080/08839514.2022.2138129
+
